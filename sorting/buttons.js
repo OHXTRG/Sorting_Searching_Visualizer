@@ -16,6 +16,7 @@ var countingcheck = document.getElementById("counting").checked;
 var mergecheck = document.getElementById("merge").checked;
 var linearcheck = document.getElementById("linear").checked;
 var binarycheck = document.getElementById("binary").checked;
+var quickcheck = document.getElementById("quick").checked;
 
 
 
