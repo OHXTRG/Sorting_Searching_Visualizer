@@ -25,7 +25,7 @@ function partition(array , left , right ){
             let temp = array[i];
             array[i] = array[j];
             array[j] = temp;
-            quick_moves.push({indices:[i,j] , type:"swap" , range:[left , right] , pivot:[right]})
+            quick_moves.push({indices:[i,j] , type:"quick_swap" , range:[left , right] , pivot:[right]})
         }
     }
 
@@ -33,7 +33,7 @@ function partition(array , left , right ){
     let temp = array[right];
     array[right] = array[i] ;
     array[i] = temp;
-    quick_moves.push({indices:[i,right] , type:"pswap" , range:[left , right] , pivot:[i]});
+    quick_moves.push({indices:[i,right] , type:"quick_pswap" , range:[left , right] , pivot:[i]});
 
     // let temp = array[i] ;
     // array[i] = array[right] ;
