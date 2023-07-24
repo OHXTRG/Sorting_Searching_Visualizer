@@ -20,8 +20,8 @@ function partition(array , left , right ){
     let i = left - 1 ;
 
     for(j = left  ; j <= right ; j++){
+        quick_moves.push({indices:[j,right] , type:"quick_comp" , range:[left , right] , pivot:[right]});
         if(array[j]<pivot){
-            quick_moves.push({indices:[j,right] , type:"quick_comp" , range:[left , right] , pivot:[right]});
             i++;
             let temp = array[i];
             array[i] = array[j];
