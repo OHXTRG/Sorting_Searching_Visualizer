@@ -1,5 +1,5 @@
 
-const quick_moves = [] ;
+var quick_moves = [] ;
 
 function quickSort(array , left , right){
     
