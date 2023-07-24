@@ -21,11 +21,12 @@ function partition(array , left , right ){
 
     for(j = left  ; j <= right ; j++){
         if(array[j]<pivot){
+            quick_moves.push({indices:[j,right] , type:"quick_comp" , range:[left , right] , pivot:[right]});
             i++;
             let temp = array[i];
             array[i] = array[j];
             array[j] = temp;
-            quick_moves.push({indices:[i,j] , type:"quick_swap" , range:[left , right] , pivot:[right]})
+            quick_moves.push({indices:[i,j] , type:"quick_swap" , range:[left , right] , pivot:[right]});
         }
     }
 
