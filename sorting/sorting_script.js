@@ -115,7 +115,7 @@ function playCountingSort(){
 
 }
 
-
+              // function for calling merge Sort 
 
 function playMergeSort(){
     reset = false;
@@ -129,6 +129,15 @@ function playMergeSort(){
     console.log(copy);
     console.log(merge_moves);
     animate(merge_moves);
+}
+
+              // function for calling Quick Sort 
+function playQuickSort(){
+    reset = false;
+    const copyarray = [...array];
+    const moves = quickSort(copyarray , 0 , copyarray.length-1);
+    console.log("these are moves"+quick_moves);
+    animate(quick_moves);
 }
 
                         
@@ -189,6 +198,13 @@ function showbars(move){
             bar.style.backgroundImage="linear-gradient( #697184,blue)";
         }
         
+
+              // conditons Quick sort 
+        if(move && move.indices.includes(i) && move.type=="pswap"){
+            bar.style.backgroundImage="linear-gradient( #697184,green)";
+        }
+        if(move && move.range.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,yellow)";
+        if(move && move.pivot.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,blue)";
 
 
                         // creating div by js 
