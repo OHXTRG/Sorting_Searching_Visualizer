@@ -56,6 +56,7 @@ function visualize(){
      mergecheck = document.getElementById("merge").checked;
      linearcheck = document.getElementById("linear").checked;
      binarycheck = document.getElementById("binary").checked;
+    quickcheck = document.getElementById("quick").checked;
     if(bubblecheck) playBubbleSort();
     else if(selectcheck) playSelectionSort();
     else if(insertcheck) playInsertionSort();
@@ -63,6 +64,8 @@ function visualize(){
     else if(mergecheck) playMergeSort();
     else if(linearcheck) linearSearch();
     else if(binarycheck) binarySearch();
+   else if(quickcheck) playQuickSort();
+  
     disableFirst();
 
 }
