@@ -209,8 +209,8 @@ function showbars(move){
         if(move && move.indices.includes(i) && move.type=="quick_pswap"){
             bar.style.backgroundImage="linear-gradient( #697184,green)";
         }
-        if(move && (move.type=="quick_swap" || move.type=="quick_pswap")  &&  move.range.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,yellow)";
-        if(move && (move.type=="quick_swap" || move.type=="quick_pswap")  && move.pivot.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,green)";
+        if(move && (move.type=="quick_swap" || move.type=="quick_pswap" || move.type=="quick_comp")  &&  move.range.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,yellow)";
+        if(move && (move.type=="quick_swap" || move.type=="quick_pswap" || move.type=="quick_comp")  && move.pivot.includes(i)) bar.style.backgroundImage="linear-gradient( #697184,green)";
 
 
 
