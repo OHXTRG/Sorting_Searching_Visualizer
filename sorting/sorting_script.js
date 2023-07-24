@@ -39,6 +39,7 @@ function init(n){
 function unsort(){
     reset = true ;
     merge_moves = [];
+    quick_moves = [];
     console.log("reset is called");
     for(let i = 0 ; i < array.length ; i++){
         array[i] = Math.random();
