@@ -156,7 +156,7 @@ function animate(moves){
     const move = moves.shift() ;
     
     const[i,j] = move.indices;
-    if(move.type=="swap" || move.type=="quick_swap" || move.type="quick_pswap"){
+    if(move.type=="swap" || move.type=="quick_swap" || move.type=="quick_pswap"){
         [array[i],array[j]]=[array[j],array[i]];
     }
     
